@@ -148,6 +148,11 @@ namespace XMLWeather
 
 
         }
+
+        private void nextLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
