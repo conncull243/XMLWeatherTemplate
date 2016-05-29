@@ -113,11 +113,23 @@ namespace XMLWeather
                                     case 1:
                                         maxOutput.Text = greatGrandchild.Attributes["max"].Value;
                                         minOutput.Text = greatGrandchild.Attributes["min"].Value;
+                                        day++;
                                         break;
-                                    //case 2:
-                                    //    max2Output.Text = greatGrandchild.Attributes["max"].Value;
-                                    //    min2Output.Text = greatGrandchild.Attributes["min"].Value;
-                                    //    break;
+                                    case 2:
+                                        max2Output.Text = greatGrandchild.Attributes["max"].Value;
+                                        min2Output.Text = greatGrandchild.Attributes["min"].Value;
+                                        day++;
+                                        break;
+                                    case 3:
+                                        max3Output.Text = greatGrandchild.Attributes["max"].Value;
+                                        min3Output.Text = greatGrandchild.Attributes["min"].Value;
+                                        day++;
+                                        break;
+                                    case 4:
+                                        max4Output.Text = greatGrandchild.Attributes["max"].Value;
+                                        min4Output.Text = greatGrandchild.Attributes["min"].Value;
+                                        day++;
+                                        break;
                                     default:
                                         break;
                                 }
@@ -130,10 +142,18 @@ namespace XMLWeather
                                         cloudOutput.Text = greatGrandchild.Attributes["value"].Value;
                                         day++;
                                         break;
-                                    //case 2:
-                                    //    clouds2Output.Text = greatGrandchild.Attributes["value"].Value;
-                                    //    day++;
-                                    //    break;
+                                    case 2:
+                                        clouds2Output.Text = greatGrandchild.Attributes["value"].Value;
+                                        day++;
+                                        break;
+                                    case 3:
+                                        clouds3Output.Text = greatGrandchild.Attributes["value"].Value;
+                                        day++;
+                                        break;
+                                    case 4:
+                                        clouds4Output.Text = greatGrandchild.Attributes["value"].Value;
+                                        day++;
+                                        break;
                                     default:
                                         break;
                                 }
@@ -146,11 +166,6 @@ namespace XMLWeather
         private void MakePictureParent()
         {
 
-
-        }
-
-        private void nextLabel_Click(object sender, EventArgs e)
-        {
 
         }
     }
